@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="153dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginTop="16dp"
+        android:text="О НАС"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        android:text="Разработчик: Константинов Роман"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/text4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="Tallinn Polütehnikum 2018"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Exit2" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        android:text="Руководитель: Федотов Дмитрии"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/ButPlay2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <Button
+        android:id="@+id/Exit2"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="84dp"
+        android:text="Выход"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/text3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButPlay2" />
+
+    <Button
+        android:id="@+id/ButPlay2"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:text="Играть"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/Exit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+</android.support.constraint.ConstraintLayout>
